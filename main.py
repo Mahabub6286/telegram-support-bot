@@ -1,8 +1,8 @@
 import telebot
 from flask import Flask, request
 
-TOKEN = "YOUR_BOT_TOKEN"
-ADMIN_ID = 123456789  # তোমার Telegram user ID
+TOKEN = "8671426516:AAHqOtxTcu35ilk5IDgNV-V3xXNV8hxtgAA"
+ADMIN_ID = 6246245717  # তোমার Telegram user ID
 
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
