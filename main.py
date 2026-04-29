@@ -35,6 +35,10 @@ def home():
 
 # Run
 if __name__ == "__main__":
+    import os
+
     bot.remove_webhook()
-    bot.set_webhook(url=f"https://YOUR-RENDER-URL/{TOKEN}")
-    app.run(host="0.0.0.0", port=10000)
+    bot.set_webhook(url=f"https://telegram-support-bot-5fv0.onrender.com/{TOKEN}")
+
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
